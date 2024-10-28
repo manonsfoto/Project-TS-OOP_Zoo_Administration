@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOP-Projekt-TS-Zoo Administration</title>
+    <link rel="stylesheet" href="./app_style.css" />
+  </head>
+  <body>
+    <h1>Zoo Administration</h1>
+    <div class="container">
+      <form>
+        <h2>Please add an animal to the zoo</h2>
+        <select id="selectAnimalType">
+          <option value="Bear">🐻 Bear</option>
+          <option value="Blowfish">🐡 Blowfish</option>
+          <option value="Clownfish">🤡 Clownfish</option>
+          <option value="Crocodile">🐊 Crocodile</option>
+          <option value="Eagle">🦅 Eagle</option>
+          <option value="Lion">🦁 Lion</option>
+          <option value="Lizard">🦎 Lizard</option>
+          <option value="Monkey">🐒 Monkey</option>
+          <option value="Parrot">🐦 Parrot</option>
+          <option value="Shark">🦈 Shark</option>
+          <option value="Swan">🦢 Swan</option>
+          <option value="Turtle">🐢 Turtle</option>
+        </select>
+        <input type="text" id="inputAnimalName" placeholder="Animal's Name" />
+        <input
+          type="number"
+          id="inputAnimalBirthYear"
+          placeholder="Animal's Year of Birth"
+        />
+        <select id="selectContinent"></select>
+        <select id="selectMealType">
+          <option value="AnimalBasedDiet">Animal Based Diet</option>
+          <option value="PlantBasedDiet">Plant Based Diet</option>
+          <option value="InsectBasedDiet">Insect Based Diet</option>
+          <option value="FishBasedDiet">Fish Based Diet</option>
+        </select>
+        <select id="selectEnclosure"></select>
+        <button type="button">Create animal</button>
+      </form>
+      <section id="displayEnclosures"></section>
+    </div>
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>
