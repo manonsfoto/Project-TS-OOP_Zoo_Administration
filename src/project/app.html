@@ -12,8 +12,9 @@
       <form>
         <h2>Please add an animal to the zoo</h2>
         <select id="selectAnimalType">
+          <option>Select Animal Type</option>
           <option value="Bear">🐻 Bear</option>
-          <option value="Blowfish">🐡 Blowfish</option>
+          <option value="Pufferfish">🐡 Pufferfish</option>
           <option value="Clownfish">🤡 Clownfish</option>
           <option value="Crocodile">🐊 Crocodile</option>
           <option value="Eagle">🦅 Eagle</option>
@@ -25,23 +26,62 @@
           <option value="Swan">🦢 Swan</option>
           <option value="Turtle">🐢 Turtle</option>
         </select>
+
         <input type="text" id="inputAnimalName" placeholder="Animal's Name" />
+
         <input
           type="number"
           id="inputAnimalBirthYear"
           placeholder="Animal's Year of Birth"
         />
-        <select id="selectContinent"></select>
-        <select id="selectMealType">
-          <option value="AnimalBasedDiet">Animal Based Diet</option>
-          <option value="PlantBasedDiet">Plant Based Diet</option>
-          <option value="InsectBasedDiet">Insect Based Diet</option>
-          <option value="FishBasedDiet">Fish Based Diet</option>
+
+        <select id="selectContinent">
+          <option>Select Continent</option>
+          <option value="0">Asia</option>
+          <option value="1">Africa</option>
+          <option value="2">NorthAmerica</option>
+          <option value="3">SouthAmerica</option>
+          <option value="4">Antarctica</option>
+          <option value="5">Europe</option>
+          <option value="6">Australia</option>
         </select>
-        <select id="selectEnclosure"></select>
+
+        <select id="selectSpecialNeeds">
+          <option>Select Special Needs</option>
+          <option value="0">Animal Based Diet</option>
+          <option value="1">Plant Based Diet</option>
+          <option value="2">Insect Based Diet</option>
+          <option value="3">Fish Based Diet</option>
+        </select>
+
+        <select id="selectEnclosure">
+          <option>Select Enclosure</option>
+          <option value="0">Savannah Habitat</option>
+          <option value="1">Jungle Habitat</option>
+          <option value="2">Aquatic Habitat</option>
+          <option value="3">Reptile House</option>
+        </select>
         <button type="button">Create animal</button>
       </form>
-      <section id="displayEnclosures"></section>
+
+      <div id="enclosure-wrapper">
+        <div class="enclosure">
+          <h2>🌴 Savannah Habitat 🌴</h2>
+          <div id="savannah"></div>
+        </div>
+        <div class="enclosure">
+          <h2>🌳 Jungle Habitat🌳</h2>
+          <div id="jungle"></div>
+        </div>
+        <div class="enclosure">
+          <h2>🌵 Reptile House 🌵</h2>
+          <div id="reptileHouse"></div>
+        </div>
+        <div class="enclosure">
+          <h2>🪸 Aquarium 🪸</h2>
+          <div id="aquarium"></div>
+        </div>
+      </div>
     </div>
     <script type="module" src="./app.ts"></script>
   </body>

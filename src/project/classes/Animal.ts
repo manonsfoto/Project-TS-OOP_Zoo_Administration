@@ -1,10 +1,9 @@
-import Continents from "./Continents";
-import Emoji from "./Emoji";
-import { EnclosureId } from "./Enclosure";
-import SpecialNeeds from "./SpecialNeeds";
+import Continents from "../enums/Continents";
+import EnclosureId from "../enums/EnclosureId";
+import SpecialNeeds from "../enums/SpecialNeeds";
 
 class Animal {
-  _emoji: Emoji;
+  _emoji: string;
   _name: string;
   _yearOfBirth: number;
   _continents: Continents;
@@ -12,7 +11,7 @@ class Animal {
   _enclosureId: EnclosureId;
 
   constructor(
-    emoji: Emoji,
+    emoji: string,
     name: string,
     yearOfBirth: number,
     continents: Continents,
@@ -34,3 +33,56 @@ class Animal {
 }
 
 export default Animal;
+
+// ===================================
+export class Bird extends Animal {
+  constructor(
+    emoji: string,
+    name: string,
+    yearOfBirth: number,
+    continents: Continents,
+    specialNeeds: SpecialNeeds,
+    enclosureId: EnclosureId
+  ) {
+    super(emoji, name, yearOfBirth, continents, specialNeeds, enclosureId);
+  }
+}
+
+export class Fish extends Animal {
+  constructor(
+    emoji: string,
+    name: string,
+    yearOfBirth: number,
+    continents: Continents,
+    specialNeeds: SpecialNeeds,
+    enclosureId: EnclosureId
+  ) {
+    super(emoji, name, yearOfBirth, continents, specialNeeds, enclosureId);
+  }
+}
+
+export class Mammal extends Animal {
+  constructor(
+    emoji: string,
+    name: string,
+    yearOfBirth: number,
+    continents: Continents,
+    specialNeeds: SpecialNeeds,
+    enclosureId: EnclosureId
+  ) {
+    super(emoji, name, yearOfBirth, continents, specialNeeds, enclosureId);
+  }
+}
+
+export class Reptile extends Animal {
+  constructor(
+    emoji: string,
+    name: string,
+    yearOfBirth: number,
+    continents: Continents,
+    specialNeeds: SpecialNeeds,
+    enclosureId: EnclosureId
+  ) {
+    super(emoji, name, yearOfBirth, continents, specialNeeds, enclosureId);
+  }
+}
