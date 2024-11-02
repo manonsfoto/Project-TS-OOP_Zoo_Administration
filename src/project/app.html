@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OOP-Projekt-TS-Zoo Administration</title>
-    <link rel="stylesheet" href="./app_style.css" />
+    <link rel="stylesheet" href="./style/app_style.css" />
   </head>
   <body>
     <h1>Zoo Administration</h1>
@@ -12,7 +12,7 @@
       <form>
         <h2>Please add an animal to the zoo</h2>
         <select id="selectAnimalType">
-          <option>Select Animal Type</option>
+          <option value="init">Select Animal Type</option>
           <option value="Bear">🐻 Bear</option>
           <option value="Pufferfish">🐡 Pufferfish</option>
           <option value="Clownfish">🤡 Clownfish</option>
@@ -31,12 +31,13 @@
 
         <input
           type="number"
+          min="1990"
           id="inputAnimalBirthYear"
           placeholder="Animal's Year of Birth"
         />
 
         <select id="selectContinent">
-          <option>Select Continent</option>
+          <option value="init">Select Continent</option>
           <option value="0">Asia</option>
           <option value="1">Africa</option>
           <option value="2">NorthAmerica</option>
@@ -47,7 +48,7 @@
         </select>
 
         <select id="selectSpecialNeeds">
-          <option>Select Special Needs</option>
+          <option value="init">Select Special Needs</option>
           <option value="0">Animal Based Diet</option>
           <option value="1">Plant Based Diet</option>
           <option value="2">Insect Based Diet</option>
@@ -55,7 +56,7 @@
         </select>
 
         <select id="selectEnclosure">
-          <option>Select Enclosure</option>
+          <option value="init">Select Enclosure</option>
           <option value="0">Savannah Habitat</option>
           <option value="1">Jungle Habitat</option>
           <option value="2">Aquatic Habitat</option>
@@ -66,19 +67,19 @@
 
       <div id="enclosure-wrapper">
         <div class="enclosure">
-          <h2>🌴 Savannah Habitat 🌴</h2>
+          <h3>🌴 Savannah Habitat 🌴</h3>
           <div id="savannah"></div>
         </div>
         <div class="enclosure">
-          <h2>🌳 Jungle Habitat🌳</h2>
+          <h3>🌳 Jungle Habitat🌳</h3>
           <div id="jungle"></div>
         </div>
         <div class="enclosure">
-          <h2>🌵 Reptile House 🌵</h2>
+          <h3>🌵 Reptile House 🌵</h3>
           <div id="reptileHouse"></div>
         </div>
         <div class="enclosure">
-          <h2>🪸 Aquarium 🪸</h2>
+          <h3>🪸 Aquarium 🪸</h3>
           <div id="aquarium"></div>
         </div>
       </div>
